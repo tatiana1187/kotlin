@@ -1,4 +1,8 @@
 package edu.etec.ds.fundamentos
+import kotlin.math.abs
+import kotlin.math.max
+import kotlin.math.min
+
 
 fun suma(a: Int, b: Int): Int {
   return a + b
@@ -41,13 +45,13 @@ fun esImpar(numero: Int): Boolean {
 }
 
 fun valorAbsoluto(numero: Int): Int {
-    TODO("Retornar el valor absoluto del numero")
+    return abs((numero))
 }
 
 fun maximo(a: Int, b: Int): Int {
-    TODO("Retornar el mayor entre a y b")
+    return max(a,b)
 }
 
 fun minimo(a: Int, b: Int): Int {
-    TODO("Retornar el menor entre a y b")
+    return min(a,b)
 }
