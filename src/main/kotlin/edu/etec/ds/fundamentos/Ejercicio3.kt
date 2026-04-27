@@ -13,19 +13,21 @@ fun saludarPersona(nombre: String, apellido: String): String {
 }
 
 fun saludarConDefault(nombre: String = "Usuario"): String {
-    TODO("Retornar \"Hola, $nombre!\"")
+    return "Hola, Usuario!"
+
 }
 
 fun crearSaludo(titulo: String, nombre: String): String {
-    TODO("Retornar \"Hola, $titulo $nombre\"")
+    return "Hola, $titulo $nombre"
+
 }
 
 fun funcionSinRetorno(): Unit {
-    TODO("Esta funcion no retorna nada")
+    return Unit
 }
 
 fun cuadrado(numero: Int): Int {
-    TODO("Retornar el cuadrado del numero")
+    return numero * numero
 }
 
 fun contarCaracteres(texto: String): Int {
@@ -37,11 +39,12 @@ fun String.cuentaCaracteres(): Int {
 }
 
 infix fun Int.esMayorQue(otro: Int): Boolean {
-    TODO("Funcion infix para comparar numeros")
+    return this > otro
+
 }
 
 fun sumarTodos(vararg numeros: Int): Int {
-    TODO("Sumar todos los numeros pasados como varargs")
+    return numeros.sum()
 }
 
 fun aplicarOperacion(a: Int, b: Int, operacion: (Int, Int) -> Int): Int {
